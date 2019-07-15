@@ -2,6 +2,6 @@
   "name": "service_page",
   "version": "1.0.0",
   "dependencies": {
-    
+    "slick-carousel": "^1.8.1"
   }
 }

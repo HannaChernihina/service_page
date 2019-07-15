@@ -29,4 +29,27 @@ table {
 }
 /*============================ css reset end*/
 
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 100000;
+    width: 100%;
+    justify-content: space-between;
+    background: #00000024;
+}
+#menu_header {
+    display: flex;
+    list-style: none;}
+#menu_header li {
+    margin: 18px 15px 8px 10px;
+    color: #fff;}
 
+#social_header { display: flex;}
+.social { margin: 10px;}
+
+.fa-github-square:before,
+.fa-instagram:before,
+.fa-linkedin:before,
+.fa-paper-plane:before{
+    color: #fff;}
