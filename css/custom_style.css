@@ -17,16 +17,26 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
+    font-family: 'Open Sans', sans-serif;
     vertical-align: baseline;
+    color: #333;
+    line-height: 1.5em;
+    text-align: justify;
+
 }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
+    margin: 0;
+    padding: 0;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 /*============================ css reset end*/
 
 #header {
@@ -38,18 +48,109 @@ table {
     justify-content: space-between;
     background: #00000024;
 }
+
 #menu_header {
     display: flex;
-    list-style: none;}
+    list-style: none;
+    flex-wrap: wrap;
+}
+
 #menu_header li {
     margin: 18px 15px 8px 10px;
-    color: #fff;}
+    color: #fff;
+}
 
-#social_header { display: flex;}
-.social { margin: 10px;}
+#social_header {
+    display: flex;
+}
+
+.social {
+    margin: 10px;
+}
 
 .fa-github-square:before,
 .fa-instagram:before,
 .fa-linkedin:before,
-.fa-paper-plane:before{
-    color: #fff;}
+.fa-paper-plane:before {
+    color: #fff;
+}
+
+#about_as {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#about_as div {
+    width: 100%;
+
+}
+
+.image_about_as img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.information_about_as {
+    padding: 0% 4% 3% 4%;
+}
+
+#logo_header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 4%;
+    font-size: 22px;
+}
+
+#logo_header span {
+    color: #ff0059;
+}
+
+.title_information_about_as {
+    padding-top: 5%;
+    border-bottom: 1px solid;
+    margin-bottom: 4%;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.button_information_about_as {
+    background-color: #26b6c8;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 4%;
+}
+
+#menu_header li {
+    cursor: pointer;
+}
+
+.title_section {
+    background-color: #373737;
+    padding: 3%;
+    display: flex;
+    justify-content: center;}
+
+.title_section p {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 200px;
+}
+
+@media screen and (max-width: 860px) {
+    #about_as {
+        flex-wrap: wrap;}
+    .image_about_as img{    height: 250px;}
+}
