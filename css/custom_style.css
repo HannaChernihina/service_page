@@ -119,7 +119,7 @@ table {
 }
 
 .button_information_about_as {
-    background-color: #26b6c8;
+    background-color: #097e89;
     width: 200px;
     padding: 10px;
     border-radius: 5px;
@@ -138,7 +138,8 @@ table {
     background-color: #373737;
     padding: 3%;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+}
 
 .title_section p {
     color: #fff;
@@ -151,6 +152,56 @@ table {
 
 @media screen and (max-width: 860px) {
     #about_as {
-        flex-wrap: wrap;}
-    .image_about_as img{    height: 250px;}
+        flex-wrap: wrap;
+    }
+
+    .image_about_as img {
+        height: 250px;
+    }
+}
+
+.wrap_items_slid {
+    border: 1px solid;
+    display: flex !important;
+
+}
+
+
+.slick-slider > div > div > div:nth-child(odd) > div > div {
+    background-color: #3d3d3d;
+}
+
+.slick-slider > div > div > div:nth-child(even) > div > div {
+    background-color: #097e89;
+}
+
+.item_slid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid;*/
+    margin: 1% 15%;
+}
+
+.button_item {
+    width: 200px;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 4%;
+    background-color: #959595;
+    margin-bottom: 10%;
+}
+
+.information_item {
+    text-align: center;
+}
+
+.title_item {
+    font-weight: bold;
+    padding: 7% 2% 2% 2%;
 }
