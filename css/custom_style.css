@@ -66,14 +66,31 @@ table {
 
 .social {
     margin: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffffff42;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .fa-github-square:before,
 .fa-instagram:before,
 .fa-linkedin:before,
 .fa-paper-plane:before {
+    color: #fff9;
+    font-size: 22px;
+}
+.fa-github-square:hover:before,
+.fa-instagram:hover:before,
+.fa-linkedin:hover:before,
+.fa-paper-plane:hover:before {
     color: #fff;
 }
+
+
 
 #about_as {
     display: flex;
@@ -249,14 +266,12 @@ hr.color_hr_black {
     text-align: center;
 }
 
-.title_item { text-transform: uppercase;
+.title_item {
+    text-transform: uppercase;
     font-weight: bold;
     color: #fff;
-    margin: 10px;}
-
-
-
-
+    margin: 10px;
+}
 
 
 /*media screen*/
@@ -270,15 +285,18 @@ hr.color_hr_black {
     }
 }
 
+
+/*sliders*//*sliders*//*sliders*//*sliders*/
 .prevServise {
     position: absolute;
     z-index: 1000;
-    right: 88px;
+    right: 27px;
     top: 90%;
     width: 25px;
     height: 25px;
     background: #089eac;
-    text-align: center; }
+    text-align: center;
+}
 
 .prevServise:before {
     content: '\f104';
@@ -289,15 +307,69 @@ hr.color_hr_black {
 .nextService {
     position: absolute;
     z-index: 1000;
-    right: 61px;
+    right: 0px;
     top: 90%;
     width: 25px;
     height: 25px;
     background: #089eac;
-    text-align: center;}
+    text-align: center;
+}
 
 .nextService:before {
     content: '\f105';
     font-family: FontAwesome;
     font-size: 31px;
 }
+
+
+
+
+.prevTop {
+    position: absolute;
+    z-index: 1000;
+    left: 60px;
+    top: 50%;
+    width: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #ffffff38;
+}
+.prevTop:before {
+    content: '\f104';
+    font-family: FontAwesome;
+    font-size: 31px;
+    color: #ffffff4a;
+}
+.prevTop:hover:before {
+    content: '\f104';
+    font-family: FontAwesome;
+    font-size: 31px;
+    color: #ffffffcf;
+}
+.nextTop {
+    position: absolute;
+    z-index: 1000;
+    right: 60px;
+    top: 50%;
+    width: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 1px solid #ffffff38;
+}
+.nextTop:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 31px;
+    color: #ffffff4a;
+}
+.nextTop:hover:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 31px;
+    color: #ffffffcf;
+}
+

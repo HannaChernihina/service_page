@@ -6,6 +6,8 @@ $( document ).ready(function() {
         accessibility: true,
         autoplay: true,
         autoplaySpeed: 3000,
+        prevArrow: '<div class="prevTop"></div>',
+        nextArrow: '<div class="nextTop"></div>',
         fade: true,
     });
 
