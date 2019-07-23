@@ -158,15 +158,6 @@ table {
     width: 40%;
 }
 
-@media screen and (max-width: 860px) {
-    #about_as {
-        flex-wrap: wrap;
-    }
-
-    .image_about_as img {
-        height: 250px;
-    }
-}
 
 .wrap_items_slid {
     border: 1px solid;
@@ -257,3 +248,16 @@ hr.color_hr_black {
     text-align: center;
 }
 
+
+
+
+/*media screen*/
+@media screen and (max-width: 860px) {
+    #about_as {
+        flex-wrap: wrap;
+    }
+
+    .image_about_as img {
+        height: 250px;
+    }
+}

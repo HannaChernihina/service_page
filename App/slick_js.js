@@ -1,4 +1,3 @@
-$(document).ready(function () {
 
     $('.single-slide').slick({
         slidesToShow: 1,
@@ -36,5 +35,3 @@ $(document).ready(function () {
         ],
 
     });
-
-
