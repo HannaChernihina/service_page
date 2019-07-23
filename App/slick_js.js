@@ -1,18 +1,23 @@
 
+$( document ).ready(function() {
+
     $('.single-slide').slick({
         slidesToShow: 1,
         accessibility: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: true,
         fade: true,
     });
 
     $('.service_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        // autoplay: true ,
-        autoplaySpeed: 3000,
+        autoplay: true ,
+        arrows: true,
+        prevArrow: '<div class="prevServise"></div>',
+        nextArrow: '<div class="nextService"></div>',
+
+        autoplaySpeed: 2000,
 
         responsive: [
             {
@@ -20,6 +25,7 @@
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    autoplay: true ,
                     infinite: true,
                 }
             },
@@ -29,9 +35,12 @@
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    autoplay: true ,
                     infinite: true,
                 }
             }
         ],
+
+    });
 
     });

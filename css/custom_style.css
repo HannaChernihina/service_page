@@ -198,6 +198,7 @@ table {
 
 .information_item {
     text-align: center;
+    color: #fff;
 }
 
 title_section
@@ -248,6 +249,13 @@ hr.color_hr_black {
     text-align: center;
 }
 
+.title_item { text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px;}
+
+
+
 
 
 
@@ -260,4 +268,36 @@ hr.color_hr_black {
     .image_about_as img {
         height: 250px;
     }
+}
+
+.prevServise {
+    position: absolute;
+    z-index: 1000;
+    right: 88px;
+    top: 90%;
+    width: 25px;
+    height: 25px;
+    background: #089eac;
+    text-align: center; }
+
+.prevServise:before {
+    content: '\f104';
+    font-family: FontAwesome;
+    font-size: 31px;
+}
+
+.nextService {
+    position: absolute;
+    z-index: 1000;
+    right: 61px;
+    top: 90%;
+    width: 25px;
+    height: 25px;
+    background: #089eac;
+    text-align: center;}
+
+.nextService:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-size: 31px;
 }
