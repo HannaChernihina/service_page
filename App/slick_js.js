@@ -10,46 +10,31 @@ $(document).ready(function () {
     });
 
     $('.service_slider').slick({
-                    slidesToShow: 3,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true ,
+        autoplaySpeed: 3000,
+
+        responsive: [
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 1,
                     slidesToScroll: 1,
-                    autoplay: true ,
-                    autoplaySpeed: 3000,
-                });
+                    infinite: true,
+                }
+            },
 
-    //
-    // function windowSize() {
-    //     if (window.matchMedia("(max-width: 520px)").matches) {
-    //         $('.service_slider').slick({
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             // autoplay: true ,
-    //             autoplaySpeed: 3000,
-    //         });
-    //
-    //     } else if (window.matchMedia("(max-width: 768px)").matches) {
-    //         $('.service_slider').slick({
-    //             slidesToShow: 2,
-    //             slidesToScroll: 1,
-    //             // autoplay: true ,
-    //             autoplaySpeed: 3000,
-    //         });
-    //
-    //     } else {
-    //         $('.service_slider').slick({
-    //             slidesToShow: 3,
-    //             slidesToScroll: 1,
-    //             responsive: true,
-    //             // autoplay: true ,
-    //             autoplaySpeed: 3000,
-    //         });
-    //     }
-    //
-    // }
-    //
-    // $(window).load(windowSize); // при загрузке
-    // $(window).resize(windowSize); // при изменении размеров
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }
+        ],
 
-
-});
+    });
 
 

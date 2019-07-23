@@ -240,7 +240,7 @@ hr.color_hr_black {
 
 .previwe_clients {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -248,4 +248,12 @@ hr.color_hr_black {
 .previwe_clients img {
     min-width: 60px;
     max-height: 60px;
+    max-width: 160px;
 }
+
+.client_wrap_img {
+    min-width: 21%;
+    margin: 15px;
+    text-align: center;
+}
+
