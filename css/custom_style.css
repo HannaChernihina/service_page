@@ -96,6 +96,9 @@ table {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: -0.5%;
+
+
 
 }
 
@@ -373,3 +376,7 @@ hr.color_hr_black {
     color: #ffffffcf;
 }
 
+.single-slide img {
+    overflow: hidden;
+    max-height: 100vh;
+    object-fit: cover;}
