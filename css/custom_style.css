@@ -96,7 +96,7 @@ table {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: -0.5%;
+    /*margin-top: -0.5%;*/
 
 
 
@@ -381,4 +381,39 @@ hr.color_hr_black {
     max-height: 100vh;
     object-fit: cover;}
 
-.overlay { }
+.single-slide {
+    position: relative;}
+
+.overlayBackgraund {height: 100vh;
+    position: absolute;
+    background: #0d16366e;
+    top: 0vh;
+    left: 0px;
+    width: 100%; }
+
+.overlaySwipe {
+    height: 8vh;
+    background: #0000008a;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+
+.fa-angle-double-left {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: FontAwesome;
+    font-size: 31px;
+    color: #ffffff4a;
+    transform: rotate(-88deg);}
+
+.fa-angle-double-left:hover {
+    color: #ffffffcf;
+}
+.topLink{ color: #0000;
+    display: block;}
