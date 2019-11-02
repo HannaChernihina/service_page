@@ -380,3 +380,5 @@ hr.color_hr_black {
     overflow: hidden;
     max-height: 100vh;
     object-fit: cover;}
+
+.overlay { }
