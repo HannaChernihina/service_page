@@ -97,6 +97,7 @@ table {
     justify-content: center;
     width: 100%;
     /*margin-top: -0.5%;*/
+    /*height: 100vh;*/
 
 
 
@@ -110,10 +111,11 @@ table {
 .image_about_as img {
     width: 100%;
     object-fit: cover;
+    height: 70vh;
 }
 
 .information_about_as {
-    padding: 0% 4% 3% 4%;
+    padding-left: 1vw;
 }
 
 #logo_header {
@@ -283,9 +285,9 @@ hr.color_hr_black {
         flex-wrap: wrap;
     }
 
-    .image_about_as img {
-        height: 250px;
-    }
+    /*.image_about_as img {*/
+    /*    height: 250px;*/
+    /*}*/
 }
 
 
@@ -379,7 +381,9 @@ hr.color_hr_black {
 .single-slide img {
     overflow: hidden;
     max-height: 100vh;
-    object-fit: cover;}
+    object-fit: cover;
+    width: 100vw;
+}
 
 .single-slide {
     position: relative;}
@@ -417,3 +421,153 @@ hr.color_hr_black {
 }
 .topLink{ color: #0000;
     display: block;}
+
+.overlayTitleSlid {
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+
+}
+.wrapBoxTitle {
+    border: 1px solid #ffffff38;
+    height: 50vh;
+    margin: 0px 19vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapBoxTitle p { color: #fff;
+text-align: center;}
+.boxTitle { text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;}
+
+.wrapSlid {
+    position: relative;}
+
+ div.overlayTitleSlid.titleSlider > div > p:nth-child(2) { width: 50%;
+ text-align: center;}
+
+
+
+ /*menu*/
+.menu_container{
+    text-align: center;
+}
+.mobile_menu{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 26px;
+    padding: 12px 25px;
+    color: #ffffff;
+    background: #097e89a6;
+    border-radius: 2px;
+    border: none;
+    width: auto;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: all 400ms;
+    -moz-transition: all 400ms;
+    transition: all 400ms;
+}
+.mobile_menu:hover{
+    background: #09383c;
+    cursor: pointer;
+}
+.mobile_menu_overlay, .mobile_menu_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mobile_menu_container, .mobile_menu_container ul li ul{
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms;
+}
+.mobile_menu_overlay{
+    display: none;
+    cursor: pointer;
+    z-index: 10200;
+    background: rgba(0, 0, 0, 0.5);
+}
+.mobile_menu_container{
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    width: 300px;
+    overflow: hidden;
+    z-index: 10201;
+    background:#097e89a6;
+}
+.mobile_menu_container.loaded{
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.mobile_menu_container .mobile_menu_content{
+    overflow: auto;
+    max-height: 100%;
+    padding-bottom: 30px;
+}
+.mobile_menu_container ul{
+    margin: 0;
+    padding: 0;
+}
+.mobile_menu_container ul li{
+    list-style: none;
+}
+.mobile_menu_container ul li a{
+    display: block;
+    padding: 15px 20px;
+    background:#097e89a6;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mobile_menu_container ul li a.parent:hover{
+    background: #097e89a6 url("images/arrow_right.svg") right 20px center no-repeat;
+    background-size: 20px;
+}
+.mobile_menu_container ul li a.back{
+    padding-left: 50px;
+    background: #097e89a6 url("images/arrow_left.svg") left 20px center no-repeat;
+    background-size: 20px;
+    min-height: 50px;
+}
+.mobile_menu_container ul li a.back:hover{
+    background:#097e89a6 url("images/arrow_left.svg") left 20px center no-repeat;
+    background-size: 20px;
+}
+.mobile_menu_container ul li a:hover{
+    background:#097e89a6;
+}
+.mobile_menu_container ul li ul{
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #097e89;
+    z-index: 2;
+}
+.mobile_menu_container ul li ul.loaded{
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+}
+.menu_container { display: none;}
+
+@media screen and (max-width: 968px){
+    .menuDesctop { display: none;}
+    .menu_container { display: block;}
+    .overlayBackgraund {
+        height: auto;}
+
+
+}

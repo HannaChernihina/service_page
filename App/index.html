@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Title</title>
 
     <!--    css ======================================================-->
@@ -42,6 +42,7 @@
         LO<span>GO</span>
     </div>
     <nav>
+        <div class="menuDesctop">
         <ul id="menu_header">
             <li>Home</li>
             <li>About</li>
@@ -51,7 +52,29 @@
             <li>Contact</li>
             <li>Pages</li>
         </ul>
+        </div>
+
+        <div class="mobile_menu_container">
+            <div class="mobile_menu_content">
+                <ul>
+                    <li><a href="#" class="parent">Home</a></li>
+                    <li><a href="#anchorOne" class="parent">About</a></li>
+                    <li><a href="#" class="parent">Service</a></li>
+                    <li><a href="#" class="parent">Portfolio</a></li>
+                    <li><a href="#" class="parent">Shop</a></li>
+                    <li><a href="#" class="parent">Contact</a></li>
+                    <li><a href="#" class="parent">Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile_menu_overlay"></div>
+
+        <div class="menu_container">
+            <a href="#" class="mobile_menu">Показать меню</a>
+        </div>
     </nav>
+
+
     <div id="social_header">
         <div class="social github">
             <a href="#" target="_blank"><i class="fa fa-github-square "></i></a>
@@ -73,13 +96,40 @@
 
 
     <div class="single-slide">
-        <img src="/service_page3/src/images/pic13.png" alt="">
-        <img src="/service_page3/src/images/pic12.png" alt="">
-        <img src="/service_page3/src/images/pic7.jpg" alt="">
-        <!--        <img src="/service_page/src/images/pic3.jpg" alt="">-->
+        <div class="wrapSlid">
+            <img src="/service_page3/src/images/pic13.png" alt="">
+            <div class="overlayBackgraund " ></div>
+            <div class="overlayTitleSlid titleSlider">
+                <div class="wrapBoxTitle">
+                    <p class="boxTitle">The best services</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div></div>
+
+        <div class="wrapSlid">
+            <img src="/service_page3/src/images/pic12.png" alt="">
+            <div class="overlayBackgraund"></div>
+            <div class="overlayTitleSlid titleSlider">
+                <div class="wrapBoxTitle">
+                    <p class="boxTitle">The best</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A harum nesciunt quasi quo ut. Eos.</p>
+                </div>
+            </div></div>
+
+        <div class="wrapSlid">
+            <img src="/service_page3/src/images/pic7.jpg" alt="">
+            <div class="overlayBackgraund"></div>
+            <div class="overlayTitleSlid titleSlider">
+                <div class="wrapBoxTitle">
+                    <p class="boxTitle">services</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nesciunt.</p>
+                </div>
+            </div></div>
     </div>
-    <div class="overlayBackgraund"></div>
+
     <div class="overlaySwipe"><a href="#anchorOne" class="topLink"><i class="far fa-angle-double-left"></i></a></div>
+
+    </div>
 </section>
 
 
