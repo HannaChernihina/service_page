@@ -48,16 +48,38 @@ $( document ).ready(function() {
     $('.slider-forFeedback').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
-        prevArrow: '<div class="prevFeedback"></div>',
-        nextArrow: '<div class="nextService"></div>',
-        asNavFor: '.slider-navFeedback'
+        arrows: false,
+        asNavFor: '.slider-navFeedback',
+        responsive: [
+            {
+                breakpoint: 603,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true ,
+                    infinite: true,
+                }
+            },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true ,
+                    infinite: true,
+                }
+            }
+        ],
     });
     $('.slider-navFeedback').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.slider-forFeedback',
-        dots: false
+        dots: false,
+        arrows: true,
+        prevArrow: '<div class="prevFeedback"></div>',
+        nextArrow: '<div class="nextFeedback"></div>',
     });
 
 

@@ -423,13 +423,22 @@ hr.color_hr_black {
 .overlayTitleSlid {
     top: 25%;
     width: 100%;
-    height: 50%;
+    /*height: 50%;*/
     position: absolute;
-
 }
+.wrapSlid {
+    height: 100vh;
+    /*max-height: 90vh;*/
+}
+.wrapSlid img {
+    height: 100vh;
+    /*max-height: 90vh;*/
+}
+#homepage_top { height: 100vh;}
+
 .wrapBoxTitle {
     border: 1px solid #ffffff38;
-    height: 50vh;
+
     margin: 0px 19vw;
     display: flex;
     justify-content: center;
@@ -646,27 +655,34 @@ text-align: center;}
     display: flex;
     justify-content: center;
     align-items: center;
-position: relative;}
-.slider-navFeedback { width: 20%;
+position: relative;
+    padding: 20px 10px;
+    background: #3d3d3d;
+    padding-top: 27px;}
+
+/*#homepage_top > .slick-list.draggable { }*/
+.slider-navFeedback { width: 30%;
     background: #3d3d3d;
     min-height: 211px;
     position: relative;
 }
 
-.slider-forFeedback { width: 80%;
+.slider-forFeedback { width: 70%;
 background: #3d3d3d;}
 
 .slider-forFeedback img {
     margin: 0 30px;
-    max-height: 200px;
+    /*max-height: 200px;*/
     object-fit: cover;
-    max-width: 280px;}
+    max-width: 280px;
+    height: 200px;
+    width: 280px;
+    }
 
 .slider-navFeedback p {
     color: #fff;
     text-align: center; }
 
-.wrappFeedbackSlider
 
 
 .prevFeedback:before {
@@ -683,20 +699,29 @@ background: #3d3d3d;}
 .nextFeedback {
     position: absolute;
     z-index: 1000;
-    right: 0px;
-    top: 90%;
+    right: 8%;
+    top: 63%;
     width: 25px;
     height: 25px;
-    background: #089eac;
     text-align: center;
+    color: #ffffff4a;
 }
 .prevFeedback {
     position: absolute;
     z-index: 1000;
-    right: 27px;
-    top: 90%;
+    right: 79%;
+    top: 63%;
     width: 25px;
     height: 25px;
-    background: #089eac;
-    text-align: center;}
+    text-align: center;
+    color: #ffffff4a;}
 
+.prevFeedback:hover, .nextFeedback:hover { color: #ffffff;}
+
+#homepage_top .single-slide {
+    height: 100vh;
+}
+
+#homepage_top .single-slide a {
+    height: 100vh;
+}
