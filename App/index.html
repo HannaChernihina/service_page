@@ -42,13 +42,13 @@
         LO<span>GO</span>
     </div>
     <nav>
-        <div class="menuDesctop">
+        <div class="menuDesctop" >
         <ul id="menu_header">
             <li>Home</li>
-            <li>About</li>
-            <li>Service</li>
+            <li><a href="#anchorOne">About</a></li>
+            <li><a href="#our_service">Service</a></li>
+            <li><a href="#feedback">Feedback</a></li>
             <li>Portfolio</li>
-            <li>Shop</li>
             <li>Contact</li>
             <li>Pages</li>
         </ul>
@@ -57,7 +57,7 @@
         <div class="mobile_menu_container">
             <div class="mobile_menu_content">
                 <ul>
-                    <li><a href="#" class="parent">Home</a></li>
+                    <li><a href="#logo_header" class="parent">Home</a></li>
                     <li><a href="#anchorOne" class="parent">About</a></li>
                     <li><a href="#" class="parent">Service</a></li>
                     <li><a href="#" class="parent">Portfolio</a></li>
@@ -70,7 +70,13 @@
         <div class="mobile_menu_overlay"></div>
 
         <div class="menu_container">
-            <a href="#" class="mobile_menu">Показать меню</a>
+            <a href="#" class="mobile_menu">
+                <div class="gamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
         </div>
     </nav>
 
@@ -204,6 +210,59 @@
         <p>feedback</p>
         <hr class="color_hr_black">
     </div>
+
+<!--    <div class="wrappBoxFeedbck">-->
+<!--    <div class="containerTextFeedback" id="containerText">111111</div>-->
+<div class="wrappFeedbackSlider">
+
+    <div class="slider-navFeedback" >
+        <div class="single-slide"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+        <div class="single-slide"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea labore numquam quae tenetur vitae!</p></div>
+        <div class="single-slide"><p>Lorem ipsum dolor sit amet.</p></div>
+        <div class="single-slide"><p>Lorem ipsum dolor sit amet, consectetur.</p></div>
+        <div class="single-slide"><p>Lorem ipsum dolor sit amet.</p></div>
+    </div>
+<div class="prevFeedback"></div>
+        <div class="slider-forFeedback">
+            <div class="single-slide"><img src="/service_page3/src/images/people2.jpg" alt="" /></div>
+            <div class="single-slide"><img src="/service_page3/src/images/people1.jpg" alt="" /></div>
+            <div class="single-slide"><img src="/service_page3/src/images/people4.jpg" alt="" /></div>
+            <div class="single-slide"><img src="/service_page3/src/images/people5.jpg" alt="" /></div>
+            <div class="single-slide"><img src="/service_page3/src/images/people6.jpg" alt="" /></div>
+        </div>
+
+
+</div>
+<!--    <div class="feedback_slider">-->
+
+<!--        <div class="wrap_items_slid_feedback">-->
+<!--            <div class="item_slid_feedback">-->
+<!--                <img name="slide" src="/service_page3/src/images/people2.jpg" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="wrap_items_slid_feedback">-->
+<!--            <div class="item_slid_feedback">-->
+<!--                <img name="slide" src="/service_page3/src/images/people1.jpg" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="wrap_items_slid_feedback">-->
+<!--            <div class="item_slid_feedback">-->
+<!--                <img  name="slide" src="/service_page3/src/images/people4.jpg" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<!--        <div class="wrap_items_slid_feedback">-->
+<!--            <div class="item_slid_feedback">-->
+<!--                <img name="slide" src="/service_page3/src/images/people5.jpg" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    </div>-->
+
+
+
 </section>
 
 <section id="clients">
@@ -234,7 +293,7 @@
 
 <!--cdn slick ===========-->
 
-
+<script src="feedbackSlider.js"></script>
 <script src="slick_js.js"></script>
 
 </body>
