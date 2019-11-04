@@ -330,7 +330,7 @@ hr.color_hr_black {
 .prevTop {
     position: absolute;
     z-index: 1000;
-    left: 60px;
+    left: 4vw;
     top: 50%;
     width: 30px;
     display: flex !important;
@@ -354,7 +354,7 @@ hr.color_hr_black {
 .nextTop {
     position: absolute;
     z-index: 1000;
-    right: 60px;
+    right: 4vw;
     top: 50%;
     width: 30px;
     display: flex !important;
@@ -438,19 +438,25 @@ hr.color_hr_black {
 
 .wrapBoxTitle {
     border: 1px solid #ffffff38;
-
-    margin: 0px 19vw;
+    /* margin: 0px 19vw; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 50vh;
+    /*width: 50vmin;*/
+    width: 50vw;
+    margin: 0 auto;
 }
 
 .wrapBoxTitle p { color: #fff;
 text-align: center;}
 .boxTitle { text-transform: uppercase;
     font-weight: bold;
-    font-size: 3rem;}
+    font-size: 9vmin;
+}
+.titlelastText {
+    font-size: 3.1vmin;}
 
 .wrapSlid {
     position: relative;}
@@ -579,9 +585,9 @@ text-align: center;}
 }
 
 @media screen and (max-width: 500px) {
-    #header { position: inherit;
-        background: #373737;
-    }
+    /*#header { position: inherit;*/
+    /*    background: #373737;*/
+    /*}*/
 }
 
 @media screen and (max-width: 400px){
